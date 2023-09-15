@@ -10,8 +10,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
 
 ## Overview
 
@@ -34,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-v9Pc4vIFwn](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-v9Pc4vIFwn)
-- Live Site URL: []()
+- Live Site URL: [https://frazkhan1.github.io/newsletter-sign-up/](https://frazkhan1.github.io/newsletter-sign-up/)
 
 ## My process
 
@@ -43,35 +41,3 @@ Users should be able to:
 - HTML
 - CSS
 - JavaScript
-
-### What I learned
-
-Basic HTML form-submission using JavaScript.
-
-```html
-<form class="sign-up-form">
-  <label for="email">Email address</label>
-  <input id="email" type="email" placeholder="email@company.com" />
-  <span class="error-message">Valid email required</span>
-  <button class="btn submit-btn">Subscribe to monthly newsletter</button>
-</form>
-```
-
-```js
-// submit email form
-function submitEmail(e) {
-  e.preventDefault();
-
-  // valid email
-  if (validateEmail(emailIn.value)) {
-    submittedEmailEl.innerText = emailIn.value;
-    toggleCards();
-    emailIn.value = "";
-    signUpFormEl.classList.remove("error");
-  }
-  // invalid email
-  else {
-    signUpFormEl.classList.add("error");
-  }
-}
-```
